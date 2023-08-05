@@ -1,17 +1,31 @@
+![@front-finance-log](./react-native-example/src/assets/front_logo.png)
+
 # Front Finance React Native Example App
 
-This project was bootstrapped with [Create React Native App](https://github.com/expo/create-react-native-app).
+Before running the application:
 
-### Before run
+`cd example/react-native-example/` (You should be in react-native-example folder)
 
-Execute `yarn` to install all dependencies.
+##### npm
 
-### Launch
+1. install dependencies
+   `npm install`
+2. For iOS only
+   `npx pod-install`
+3. Run the example
+   `npm run start`
 
-Execute `yarn start:ex` to launch the app using [Expo](https://docs.expo.dev/).
+##### yarn
 
-Now, you can install the example app on your device or simulator. For example, press `i` to run the example app on the iOS simulator.
+1. install dependencies
+   `yarn install`
+2. For iOS only
+   `npx pod-install`
+3. Run the example
+   `yarn start`
 
-### Getting connection link
+This will bring the metro build terminal. Now you can run `Android` and `iOS` applications by pressing `a` and `i` for Android/iOS respectivily.
 
-The connection link should be obtained from the [Get catalog link endpoint](https://integration-api.getfront.com/apireference#tag/Integrations/paths/~1api~1v1~1cataloglink/get). Use `iFrameUrl` field from the response.
+#### Getting connection link
+
+The connection link should be obtained from the [Get catalong link endpoint](https://integration-api.getfront.com/apireference#tag/Integrations/paths/~1api~1v1~1cataloglink/get). User `iFrameUrl` value from the response.

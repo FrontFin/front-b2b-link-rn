@@ -6,6 +6,6 @@ JS libraries for integrating with Front Finance.
 
 - [@front-finance/frontfinance-rn-sdk](packages/front-b2b-link-rn/)
 
-### Examples:
+### Example:
 
-- React Native example - [example](example/)
+To run the example check out instructions at [Example README](./example/README.md "Example README file")
