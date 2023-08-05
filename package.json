@@ -13,7 +13,8 @@
     "version": "lerna version --no-private",
     "build": "lerna run build",
     "test": "lerna run test",
-    "start:ex": "cd example && yarn expo start"
+    "clean": "lerna run clean",
+    "start:ex": "cd example/react-native-example && npx react-native start"
   },
   "repository": {
     "type": "git",
