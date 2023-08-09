@@ -13,3 +13,9 @@ yarn.lock
 package-lock.json
 
 .DS_*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.iml
