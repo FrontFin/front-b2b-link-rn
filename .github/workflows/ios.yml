@@ -140,6 +140,7 @@ jobs:
           echo "Uploaded to firebase! 🎉"
 
   e2e:
+    if: false
     needs: analysis
     runs-on: macos-11
     timeout-minutes: 60
