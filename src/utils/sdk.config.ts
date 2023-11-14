@@ -1,6 +1,9 @@
 import packageJson from '../../package.json';
 
 const packageVersion = packageJson.version;
-const packageName = 'RNSDK';
+const packageName = 'reactNative';
 
-export const sdkSpecs = `${packageName}@${packageVersion}`;
+export const sdkSpecs = {
+  packageName,
+  packageVersion
+};

@@ -13,6 +13,9 @@ describe('SDK Specs', () => {
   })
 
   test('should return the correct SDK type', () => {
-    expect(sdkType).toBe(`RNSDK@${SDKVersion}`);
+    expect(sdkType).toEqual({
+      packageName: 'reactNative',
+      packageVersion: SDKVersion
+    });
   })
 })

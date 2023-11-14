@@ -16,10 +16,11 @@ import { decode64, isValidUrl } from './utils';
 import { sdkSpecs } from './utils/sdk.config';
 
 const sdkTypeScript = `
-    window.postMessage('${sdkSpecs}', '*');
-
-    if(window.parent) {
-      window.parent.postMessage('${sdkSpecs}', '*');
+    window.meshSdkPlatform='${sdkSpecs.packageName}';
+    window.meshSdkVersion='${sdkSpecs.packageVersion}';
+    if(window.parent){
+      window.parent.meshSdkPlatform='${sdkSpecs.packageName}';
+      window.parent.meshSdkVersion='${sdkSpecs.packageVersion}';
     }
   `;
 
