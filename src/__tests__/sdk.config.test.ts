@@ -7,6 +7,7 @@ describe('SDK Specs', () => {
 
   beforeAll(() => {
     const packageJSONContent = JSON.parse(
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
       require('fs').readFileSync('package.json', 'utf8')
     );
     SDKVersion = packageJSONContent.version;
