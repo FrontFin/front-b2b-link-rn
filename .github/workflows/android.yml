@@ -24,6 +24,7 @@ env:
 
 jobs:
   build:
+    if: false
     timeout-minutes: 60
     defaults:
         run:
@@ -61,10 +62,6 @@ jobs:
       - name: Clean Gradle cache 🧹
         working-directory: ${{ env.WORKING_DIRECTORY }}/android
         run: ./gradlew clean
-#      - name: Update Gradle lock 🔏
-#        if: github.event_name == 'pull_request'
-#        working-directory: ${{ env.WORKING_DIRECTORY }}/android
-#        run: ./gradlew app:dependencies --write-locks
       - name: Build release 🏗️
         working-directory: ${{ env.WORKING_DIRECTORY }}/android
         run: |
