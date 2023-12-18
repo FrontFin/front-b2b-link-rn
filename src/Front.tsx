@@ -14,6 +14,9 @@ import { WebViewNativeEvent } from 'react-native-webview/lib/WebViewTypes';
 import { FrontPayload, TransferFinishedPayload } from './types';
 import { decode64, isValidUrl } from './utils';
 
+/***
+ @deprecated use https://github.com/FrontFin/mesh-react-native-sdk instead
+ */
 const FrontFinance = ({
                         url, // @deprecated use linkToken instead
                         linkToken,
