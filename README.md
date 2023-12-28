@@ -1,5 +1,11 @@
 # Front Finance React Native SDK
 
+### 📌 Deprecation Notice
+
+As of Dec 7, 2023 this package is no longer maintained and has been superseded by a new version. For the latest features, improvements, and bug fixes, please use our updated package: [mesh-react-native-sdk](https://github.com/FrontFin/mesh-react-native-sdk).
+
+We encourage all users to migrate to the new package for continued support and updates.
+
 ### Install
 
 With `npm`:
